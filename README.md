@@ -3,7 +3,7 @@
 
 <br />
 <p align="center">
-  <a href="https://github.com/Naveen-Bisht/BloggersHome">
+  <a href="https://github.com/Naveen-Bisht/BloggersHome" target="_blank">
     <img src="images/home.png" alt="Logo" width="600" height="400">
   </a>
 
@@ -70,7 +70,7 @@ Technologies that are used for builting this project are:
 <img src="images/edit.png" alt="Logo" width="600" height="200">
 
 7. Create Blog
-<img src="images/newb.png" alt="Logo" width="600" height="200">
+<img src="images/new.png" alt="Logo" width="600" height="200">
 
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/nbisht7/
