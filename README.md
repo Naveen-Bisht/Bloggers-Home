@@ -4,7 +4,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/Naveen-Bisht/BloggersHome">
-    <img src="images/homenew.png" alt="Logo" width="600" height="400">
+    <img src="images/home.png" alt="Logo" width="600" height="400">
   </a>
 
   <h3 align="center">Blogger's Home <br/>
@@ -51,20 +51,26 @@ Technologies that are used for builting this project are:
 
 ### Screenshots
 
-1. Start Home
-<img src="images/home.png" alt="Logo" width="600" height="200">
+1. Home - LogIn User
+<img src="images/homelogin.png" alt="Logo" width="600" height="200">
 
 2. Blog View
-<img src="images/blog.png" alt="Logo" width="600" height="200">
+<img src="images/show.png" alt="Logo" width="600" height="200">
 
 3. Comments
 <img src="images/comment.png" alt="Logo" width="600" height="200">
 
-4. Edit Blog
+4. Login
+<img src="images/login.png" alt="Logo" width="600" height="200">
+
+5. SignUp
+<img src="images/signup.png" alt="Logo" width="600" height="200">
+
+6. Edit Blog
 <img src="images/edit.png" alt="Logo" width="600" height="200">
 
-5. Create Blog
-<img src="images/newblog.png" alt="Logo" width="600" height="200">
+7. Create Blog
+<img src="images/newb.png" alt="Logo" width="600" height="200">
 
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/nbisht7/
