@@ -1,0 +1,20 @@
+<h1 style="font-weight: bolder;font-size: 4em;margin-bottom: 0em;color: #10406A;font-family: 'New Tegomin', serif;text-align: center;"><- Blogger&#39;s  Home -></h1>
+<nav class="navbar navbar-light">
+  <div class="container-fluid">
+    <div class="navbar-header d-flex justify-content-center">
+      <button type="button" class="btn btn-primary" style="margin-top:7px;"><%= link_to 'Home', root_path %></button>
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <% if auth_signed_in? %>
+        <button type="button" class="btn btn-info" style="margin-top:7px; color:white;"><%= link_to 'New Blog', new_article_path %></button>
+        <button type="button" class="btn btn-danger" style="margin-top:7px;"><%= link_to 'Sign out', destroy_auth_session_path, :method => :delete %></button>
+        <% else %>
+        <button type="button" class="btn btn-primary" style="margin-top:7px;"><%= link_to 'Sign Up', new_auth_registration_path %></button>
+        <button type="button" class="btn btn-warning" style="margin-top:7px;"><%= link_to 'Sign In', new_auth_session_path %></button>
+        <% end %>
+      </ul>
+    </div>
+  </div>
+</nav>

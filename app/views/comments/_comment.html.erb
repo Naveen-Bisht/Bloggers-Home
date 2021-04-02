@@ -1,0 +1,19 @@
+<div class="comment">
+    <div class="cmt-body">
+        <strong>&rarr; </strong>
+        <%= comment.body %>
+    </div>
+    <div class="cmt-name">
+        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+        <strong>by: </strong>
+        <%= comment.commenter %>
+        &emsp;&emsp;&emsp;&emsp;
+    </div>
+  <% if auth_signed_in? %>
+      <div class="cmt-delete">
+        <%= link_to 'Delete Comment', [comment.article, comment],
+                    method: :delete,
+                    data: { confirm: "Are you sure?" } %>
+      </div>
+  <% end %>
+<div>

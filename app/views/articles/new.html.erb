@@ -1,0 +1,17 @@
+
+<%= render "navbar", article: @article %>
+<div class="main">
+    <h1 class="header">New Blog</h1>
+    <br/>
+    <ul>
+    <% @article.errors.full_messages.each do |msg| %>
+        <li class="list"><%= msg %></li>
+    <% end %>
+    </ul>
+
+    <%= render "form", article: @article %>
+
+    <br/><br/>
+
+</div>
+

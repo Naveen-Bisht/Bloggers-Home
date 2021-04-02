@@ -1,0 +1,24 @@
+<div class="main">
+  <%= render "navbar", article: @article %>
+  <h2 class="blue-box">Blogs</h2>
+  <h3>Total Blogs: <%= Article.public_count %>
+  <br/><br/>
+  <% if Article.public_count > 0 %>
+    <% @articles.each do |article| %>
+      <div class="grid-container">
+        <div class="data-items">
+          <h2 class="title" style="font-weight: bolder;font-size:1.4em;"> <%= link_to article.title, article %> </h2>
+          <br/>
+          <h4 style="color:#10406A;"><%= truncate article.body, length: 50 %></h4>
+          <%= image_tag(article.image.url, class: "index-img", alt: 'Image') if article.image?%>
+        </div>
+      </div>
+      
+  <% end %>
+  <% else %>
+    <h2 class="blue-box">Darn, looks like we don’t have anything...</h2>
+  <% end %>
+  <div class="paginate">
+      <%= will_paginate @articles, renderer: BootstrapPagination::Rails %>
+  </div>
+</div>

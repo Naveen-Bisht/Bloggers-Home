@@ -1,0 +1,25 @@
+
+<%= render "navbar", article: @article %>
+
+<div class="main">
+  <h1 class="header"><%= @article.title %></h1>
+
+  <div class="content">
+    <p class="text-body"><%= @article.body %></p>
+    <%= image_tag(@article.image.url, class: "show-img", alt: 'Image') if @article.image?%>
+  </div>
+  <br/>
+  
+  <% if auth_signed_in? %>
+      &#8594; <%= link_to "Edit Blog", edit_article_path(@article) %>
+      &#8594; <%= link_to "Delete Blog", article_path(@article), method: :delete, data: { confirm: "Are you sure?" } %>
+      <h2 class="blue-box">Comments</h2>
+      <%= render @article.comments %>
+      <h2 class="blue-box">Add a comment:</h2>
+      <%= render 'comments/form' %>
+    <% else %>
+      <h2 class="blue-box">Comments</h2>
+      <%= render @article.comments %>
+  <% end %>
+ 
+</div>

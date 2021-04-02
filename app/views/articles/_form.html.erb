@@ -1,0 +1,27 @@
+
+<div class="main">
+  <%= form_with model: @article do |form| %>
+    <div>
+      <%= form.label :status %><br>
+      <%= form.select :status, ['public', 'private', 'archived'], selected: 'public' %>
+    </div>
+    <br/>
+    <div>
+        <%= form.label :title %><br>
+        <%= form.text_field :title %>
+    </div>
+    <br/>
+    <div>
+        <%= form.label :content %><br>
+        <%= form.text_area :body %><br>
+    </div>
+    <div>
+    <%= form.label :image %>
+    <%= form.file_field :image, class: 'upload' %>
+  </div>
+  <br/>
+    <div>
+        <%= form.submit %>
+    </div>
+  <% end %>
+</div>
